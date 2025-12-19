@@ -1,65 +1,67 @@
-# Rapigo Auth Microservice
+# Axiom Auth
 
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/codegshinde/rapigo-auth-microservice/go.yml)
-![Static Badge](https://img.shields.io/badge/GO-v1.21.4-green)
-![GitHub License](https://img.shields.io/github/license/codegshinde/rapigo-auth-microservice?style=flat)
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/codegshinde/rapigo-auth-microservice)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/codegshinde/axiom-auth/go.yml)
+![Go Version](https://img.shields.io/badge/Go-1.21.4+-00ADD8?logo=go&logoColor=white)
+![License](https://img.shields.io/github/license/codegshinde/axiom-auth)
+![Last Commit](https://img.shields.io/github/last-commit/codegshinde/axiom-auth)
 
-Rapigo Auth Microservice is a Golang-based microservice for authentication.
+**Axiom Auth** is a lightweight, production-ready authentication microservice written in Go.  
+It is designed as a foundational building block for modern, distributed backend systems.
+
+The project focuses on **clarity, security, and extensibility**, making it suitable for both
+small services and larger microservice-based platforms.
+
+---
+
+## Why Axiom Auth
+
+Most authentication services either become overly complex or tightly coupled to a specific
+platform. Axiom Auth takes a pragmatic approach:
+
+- Minimal surface area
+- Explicit behavior
+- Clean separation of concerns
+- Infrastructure-friendly design
+
+It is intended to be **composed**, not imposed.
+
+---
 
 ## Features
 
 - JWT-based authentication
-- User and Admin management
-- Password hashing using bcrypt
+- User and Admin identity management
+- Secure password hashing using bcrypt
+- Environment-driven configuration
+- Clean, idiomatic Go codebase
+- Designed for microservice architectures
 
-## Prerequisites
+---
 
-- [Go](https://golang.org/dl/) installed
-- MongoDB set up and running
+## Non-Goals
 
-## Installation
+To keep the project focused, Axiom Auth intentionally does **not** include:
 
-1. **Clone the repository:**
+- UI or frontend components
+- Opinionated authorization policies
+- Vendor-specific dependencies
+- Session storage or stateful auth flows
 
-   ```bash
-   git clone https://github.com/codegshinde/rapigo-auth-microservice.git
-   ```
+These concerns are expected to be handled at the platform or gateway level.
 
-2. **Navigate to project directory:**
+---
 
-   ```bash
-   cd rapigo-auth-microservice
-   ```
+## Requirements
 
-3. **Create a .env file and set the required environment variables (See .env.sample).**
+- Go **1.21.4+**
+- MongoDB (local or managed instance)
 
-4. **Build the microservice:**
+---
 
-   ```bash
-   go build -o bin/rapigo-auth-microservice cmd/main.go
-   ```
+## Getting Started
 
-5. **Run the microservice:**
+### 1. Clone the repository
 
-   ```bash
-   bin/rapigo-auth-microservice
-   ```
-
-## Usage
-
-Your microservice is now running at [http://localhost:8080](http://localhost:8080). You can use the API for user and admin authentication.
-
-Refer to the API documentation for detailed usage instructions.
-
-## API Documentation
-
-Describe where users can find detailed API documentation. You may use tools like Swagger or provide a Postman collection.
-
-## Contributing
-
-We welcome contributions! Please follow the [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License.
+```bash
+git clone https://github.com/codegshinde/axiom-auth.git
+cd axiom-auth
