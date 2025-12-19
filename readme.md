@@ -1,9 +1,9 @@
 # Axiom Auth
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/codegshinde/axiom-auth/go.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/alexpatil/axiom-auth/go.yml)
 ![Go Version](https://img.shields.io/badge/Go-1.21.4+-00ADD8?logo=go&logoColor=white)
-![License](https://img.shields.io/github/license/codegshinde/axiom-auth)
-![Last Commit](https://img.shields.io/github/last-commit/codegshinde/axiom-auth)
+![License](https://img.shields.io/github/license/alexpatil/axiom-auth)
+![Last Commit](https://img.shields.io/github/last-commit/alexpatil/axiom-auth)
 
 **Axiom Auth** is a lightweight, production-ready authentication microservice written in Go.  
 It is designed as a foundational building block for modern, distributed backend systems.
