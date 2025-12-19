@@ -63,5 +63,5 @@ These concerns are expected to be handled at the platform or gateway level.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/codegshinde/axiom-auth.git
+git clone https://github.com/alexpatil/axiom-auth.git
 cd axiom-auth
